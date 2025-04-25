@@ -6,7 +6,7 @@ include 'menu.php';
     <h2 class="text-center">Compétitions à venir</h2>
 
     <?php
-    $json = file_get_contents('http://172.29.103.63/mon-api/api-index.php');
+    $json = file_get_contents('http://localhost/mon-api/api-index.php');
     $competitions = json_decode($json, true);
     ?>
 

@@ -6,7 +6,7 @@
 
     // Récupérer les informations de la compétition via l'API
     if (isset($id)) {
-        $json = file_get_contents('http://172.29.103.63/mon-api/api-competitions-modifier.php?id=' . $id);
+        $json = file_get_contents('http://localhost/mon-api/api-competitions-modifier.php?id=' . $id);
         $competition = json_decode($json, true);
     }
 

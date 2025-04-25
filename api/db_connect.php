@@ -1,7 +1,7 @@
 <?php
 header('Content-Type: application/json');
 
-$host = '172.29.103.63';
+$host = 'localhost';
 $dbname = 'ffbsq_competitions';
 $user = 'root';
 $pass = '';  // Mets ton mot de passe si besoin

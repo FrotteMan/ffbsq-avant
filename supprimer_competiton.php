@@ -1,5 +1,5 @@
 <?php
-$pdo = new PDO('mysql:host=172.29.103.63;dbname=ffbsq_competitions', 'root', '');
+$pdo = new PDO('mysql:host=localhost;dbname=ffbsq_competitions', 'root', '');
 
 if (!isset($_GET['id'])) {
     die("ID de compétition manquant.");

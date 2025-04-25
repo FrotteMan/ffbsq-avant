@@ -1,7 +1,7 @@
 <?php
 try {
     // Connexion à la base de données
-    $pdo = new PDO('mysql:host=172.29.103.63;dbname=ffbsq_competitions', 'root', '');
+    $pdo = new PDO('mysql:host=localhost;dbname=ffbsq_competitions', 'root', '');
 
 
     // Récupération des données du formulaire

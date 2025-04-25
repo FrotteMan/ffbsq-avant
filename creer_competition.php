@@ -32,7 +32,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     ]);
 
     // Envoyer les données à l'API pour ajouter le résultat
-    file_get_contents('http://172.29.103.63/mon-api/api-competitions.php', false, $context);
+    file_get_contents('http://localhost/mon-api/api-competitions.php', false, $context);
 
     // Rediriger après l'ajout du résultat
     header('Location: gestion_competitions.php'); // Redirige vers la page de gestion des résultats

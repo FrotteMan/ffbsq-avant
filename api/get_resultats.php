@@ -8,7 +8,7 @@ if (!isset($_GET['competition_id'])) {
 
 $competition_id = intval($_GET['competition_id']);
 
-$pdo = new PDO('mysql:host=172.29.103.63;dbname=ffbsq_competitions', 'root', '');
+$pdo = new PDO('mysql:host=localhost;dbname=ffbsq_competitions', 'root', '');
 
 $sql = $pdo->prepare("
     SELECT r.id_resultat, e.nom_equipe, r.position, r.points

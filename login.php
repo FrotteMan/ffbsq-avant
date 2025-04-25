@@ -3,7 +3,7 @@ session_start();
 include 'menu.php';
 
 // Adresse de ton API
-$apiUrl = 'http://172.29.103.63/mon-api/api-login.php'; // Assure-toi que l'URL de l'API est correcte
+$apiUrl = 'http://localhost/mon-api/api-login.php'; // Assure-toi que l'URL de l'API est correcte
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $email = $_POST['email'];

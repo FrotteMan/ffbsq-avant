@@ -21,7 +21,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['delete_id'])) {
         ]
     ]);
 
-    $result = file_get_contents('http://172.29.103.63/mon-api/api-competitions-supprimer.php', false, $context);
+    $result = file_get_contents('http://localhost/mon-api/api-competitions-supprimer.php', false, $context);
     $response = json_decode($result, true);
 
     if (!isset($response['success']) || $response['success'] !== true) {
@@ -35,7 +35,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['delete_id'])) {
 }
 
 // Récupération des compétitions depuis l’API
-$json = file_get_contents('http://172.29.103.63/mon-api/api-competitions.php');
+$json = file_get_contents('http://localhost/mon-api/api-competitions.php');
 $competitions = json_decode($json, true);
 ?>
 

@@ -30,7 +30,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     ]);
 
     // Envoyer les données à l'API pour ajouter le résultat
-    file_get_contents('http://172.29.103.63/mon-api/api-resultat.php', false, $context);
+    file_get_contents('http://localhost/mon-api/api-resultat.php', false, $context);
 
     // Rediriger après l'ajout du résultat
     header('Location: ajouter_resultat.php'); // Redirige vers la page de gestion des résultats
@@ -38,10 +38,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 }
 
 // Récupérer les compétitions et les équipes depuis l'API
-$json = file_get_contents('http://172.29.103.63/mon-api/api-resultat.php?id=1');
+$json = file_get_contents('http://localhost/mon-api/api-resultat.php?id=1');
 $competitions = json_decode($json, true);
 
-$json = file_get_contents('http://172.29.103.63/mon-api/api-resultat.php?id=2');
+$json = file_get_contents('http://localhost/mon-api/api-resultat.php?id=2');
 $equipes = json_decode($json, true);
 ?>
 

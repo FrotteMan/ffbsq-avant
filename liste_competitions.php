@@ -1,7 +1,7 @@
 <?php
 echo '<link rel="stylesheet" type="text/css" href="style.css">';
 include 'menu.php';
-$pdo = new PDO('mysql:host=172.29.103.63;dbname=ffbsq_competitions', 'root', '');
+$pdo = new PDO('mysql:host=localhost;dbname=ffbsq_competitions', 'root', '');
 
 
 $sql = $pdo->query("

@@ -18,7 +18,7 @@ include 'menu.php';
         <tbody>
 		
 		<?php
-		$json = file_get_contents('http://172.29.103.63/mon-api/api-classement-equipes.php');
+		$json = file_get_contents('http://localhost/mon-api/api-classement-equipes.php');
 		$equipes = json_decode($json, true);
 		
 		$position=1
