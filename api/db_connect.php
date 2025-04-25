@@ -4,7 +4,7 @@ header('Content-Type: application/json');
 $host = 'localhost';
 $dbname = 'ffbsq_competitions';
 $user = 'root';
-$pass = '';  // Mets ton mot de passe si besoin
+$pass = 'root';  // Mets ton mot de passe si besoin
 
 try {
     $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8", $user, $pass);

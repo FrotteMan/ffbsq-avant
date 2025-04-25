@@ -18,7 +18,7 @@ $equipe_id = $data['equipe_id'];
 $position = $data['position'];
 
 try {
-    $pdo = new PDO('mysql:host=localhost;dbname=ffbsq_competitions', 'root', '');
+    $pdo = new PDO('mysql:host=localhost;dbname=ffbsq_competitions', 'root', 'root');
     $stmt = $pdo->prepare("CALL ajouter_resultat(?, ?, ?)");
     $stmt->execute([$competition_id, $equipe_id, $position]);
 

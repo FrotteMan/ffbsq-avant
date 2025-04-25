@@ -1,7 +1,7 @@
 <?php
 header('Content-Type: application/json');
 
-$pdo = new PDO('mysql:host=localhost;dbname=ffbsq_competitions', 'root', '');
+$pdo = new PDO('mysql:host=localhost;dbname=ffbsq_competitions', 'root', 'root');
 
 $sql = $pdo->query("
     SELECT e.id_equipe, e.nom_equipe, c.nom_club
