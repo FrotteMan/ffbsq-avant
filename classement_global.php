@@ -31,7 +31,7 @@
         <?php endforeach; ?>
         </tbody>
     </table>
-    <a href="../index.php" class="btn btn-primary">⬅ Retour Accueil</a>
+    <a href="index.php" class="btn btn-primary">⬅ Retour Accueil</a>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>

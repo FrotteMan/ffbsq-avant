@@ -87,6 +87,6 @@ $competitions = json_decode($json, true);
 
     <div class="mt-3">
         <a href="creer_competition.php" class="btn btn-success">+ Créer une compétition</a>
-        <a href="../index.php" class="btn btn-primary">⬅ Retour Accueil</a>
+        <a href="index.php" class="btn btn-primary">⬅ Retour Accueil</a>
     </div>
 </div>
